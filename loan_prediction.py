@@ -1,34 +1,51 @@
 import pandas as pd
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.linear_model import LogisticRegression
+
 from sklearn.metrics import accuracy_score
 
-# Load Dataset
+from sklearn.preprocessing import LabelEncoder
+
 data = pd.read_csv("dataset/loan_data.csv")
 
-# Convert categorical columns
-data = pd.get_dummies(data, drop_first=True)
+encoder = LabelEncoder()
 
-# Features and Target
-X = data.drop("Loan_Status_Y", axis=1)
-y = data["Loan_Status_Y"]
+data["Gender"] = encoder.fit_transform(data["Gender"])
 
-# Split Dataset
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42
+data["Married"] = encoder.fit_transform(data["Married"])
+
+data["Education"] = encoder.fit_transform(data["Education"])
+
+data["Self_Employed"] = encoder.fit_transform(data["Self_Employed"])
+
+data["Property_Area"] = encoder.fit_transform(data["Property_Area"])
+
+data["Loan_Status"] = encoder.fit_transform(data["Loan_Status"])
+
+X = data.drop("Loan_Status",axis=1)
+
+y = data["Loan_Status"]
+
+X_train,X_test,y_train,y_test=train_test_split(
+
+X,
+
+y,
+
+test_size=.20,
+
+random_state=42
+
 )
 
-# Train Model
-model = LogisticRegression(max_iter=1000)
+model=LogisticRegression(max_iter=1000)
 
-model.fit(X_train, y_train)
+model.fit(X_train,y_train)
 
-# Prediction
-prediction = model.predict(X_test)
+prediction=model.predict(X_test)
 
-accuracy = accuracy_score(y_test, prediction)
+print("Accuracy")
 
-print("Accuracy :", accuracy)
+print(accuracy_score(y_test,prediction))
