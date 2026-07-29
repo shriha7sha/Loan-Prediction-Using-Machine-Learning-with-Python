@@ -40,3 +40,10 @@ Shriharsha
 5. Logistic Regression Training
 6. Prediction
 7. Accuracy Evaluation
+
+## Project Workflow
+
+1. User enters loan details.
+2. Machine learning model processes the input.
+3. Logistic Regression predicts the outcome.
+4. The application displays whether the loan is likely to be approved.
