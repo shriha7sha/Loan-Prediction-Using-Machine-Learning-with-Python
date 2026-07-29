@@ -47,3 +47,23 @@ Shriharsha
 2. Machine learning model processes the input.
 3. Logistic Regression predicts the outcome.
 4. The application displays whether the loan is likely to be approved.
+
+## Features
+
+- User Registration
+- User Login
+- Loan Prediction
+- Machine Learning Classification
+- Logistic Regression
+- Dataset Preprocessing
+- Responsive Interface
+
+## Future Scope
+
+- Deploy using Render or PythonAnywhere
+
+- Connect with MySQL
+
+- Improve model accuracy
+
+- Add email notifications
