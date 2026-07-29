@@ -6,39 +6,97 @@
 
 <title>Loan Prediction</title>
 
+<link rel="stylesheet" href="../static/style.css">
+
 </head>
 
 <body>
 
-<h2>Loan Prediction Form</h2>
+<div class="container">
+
+<h1>Loan Prediction</h1>
 
 <form>
 
-<input
-type="number"
-placeholder="Applicant Income">
+<input type="number" placeholder="Applicant Income">
 
-<br><br>
+<input type="number" placeholder="Co-applicant Income">
 
-<input
-type="number"
-placeholder="Loan Amount">
+<input type="number" placeholder="Loan Amount">
 
-<br><br>
+<input type="number" placeholder="Loan Amount Term">
 
-<input
-type="number"
-placeholder="Loan Term">
+<select>
 
-<br><br>
+<option>Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+<select>
+
+<option>Married</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+<select>
+
+<option>Education</option>
+
+<option>Graduate</option>
+
+<option>Not Graduate</option>
+
+</select>
+
+<select>
+
+<option>Self Employed</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+<select>
+
+<option>Credit History</option>
+
+<option>1</option>
+
+<option>0</option>
+
+</select>
+
+<select>
+
+<option>Property Area</option>
+
+<option>Urban</option>
+
+<option>Semi Urban</option>
+
+<option>Rural</option>
+
+</select>
 
 <button>
 
-Predict
+Predict Loan Status
 
 </button>
 
 </form>
+
+</div>
 
 </body>
 
