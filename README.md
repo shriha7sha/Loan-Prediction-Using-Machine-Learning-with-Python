@@ -1,2 +1,32 @@
-# Loan-Prediction-Using-Machine-Learning-with-Python
-A machine learning-based web application that predicts loan approval using a supervised learning approach. The project uses Python for implementation and a web interface built with HTML, CSS, and Django. The backend database is SQLite... 
+# Loan Prediction Using Machine Learning with Python
+
+## Overview
+
+This repository contains the internship report and seminar presentation for my Machine Learning internship project on Loan Prediction.
+
+The project focuses on predicting loan approval using Machine Learning techniques implemented in Python.
+
+## Technologies Used
+
+- Python
+- Machine Learning
+- Logistic Regression
+- HTML
+- CSS
+- Django
+- SQLite
+- Jupyter Notebook
+- Anaconda
+
+## Repository Contents
+
+- Internship Report (PDF)
+- Internship Seminar Presentation (PDF)
+
+## Future Improvements
+
+The original project source code is currently unavailable. This repository serves as documentation of the internship work completed during my undergraduate studies.
+
+## Author
+
+Shriharsha
