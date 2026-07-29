@@ -30,3 +30,13 @@ The original project source code is currently unavailable. This repository serve
 ## Author
 
 Shriharsha
+
+## Machine Learning Workflow
+
+1. Load Dataset
+2. Data Preprocessing
+3. Feature Encoding
+4. Train/Test Split
+5. Logistic Regression Training
+6. Prediction
+7. Accuracy Evaluation
